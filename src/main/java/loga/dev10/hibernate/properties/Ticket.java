@@ -27,4 +27,5 @@ public class Ticket {
     @ManyToOne
     @JoinColumn(name = "to_planet_id", referencedColumnName = "id", nullable = false)
     private Planet toPlanet;
+
 }

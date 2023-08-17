@@ -1,9 +1,12 @@
 package loga.dev10.hibernate.properties;
 
 import lombok.Data;
-
+import lombok.Getter;
+import lombok.Setter;
 import jakarta.persistence.*;
 
+@Getter
+@Setter
 @Data
 @Entity
 @Table(name = "planet")
@@ -14,4 +17,19 @@ public class Planet {
 
     @Column(name = "name", nullable = false, length = 500)
     private String name;
+
+    public Planet(String id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+    public Planet() {
+    }
+
+    @Override
+    public String toString() {
+        return "Planet{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
