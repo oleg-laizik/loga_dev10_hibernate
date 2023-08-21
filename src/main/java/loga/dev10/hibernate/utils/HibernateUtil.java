@@ -1,8 +1,8 @@
 package loga.dev10.hibernate.utils;
 
-import loga.dev10.hibernate.properties.Client;
-import loga.dev10.hibernate.properties.Planet;
-import loga.dev10.hibernate.properties.Ticket;
+import loga.dev10.hibernate.entities.Client;
+import loga.dev10.hibernate.entities.Planet;
+import loga.dev10.hibernate.entities.Ticket;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 

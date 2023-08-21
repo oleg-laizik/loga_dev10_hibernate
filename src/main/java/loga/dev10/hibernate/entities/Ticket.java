@@ -1,4 +1,4 @@
-package loga.dev10.hibernate.properties;
+package loga.dev10.hibernate.entities;
 
 import lombok.Data;
 

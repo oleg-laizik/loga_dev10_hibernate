@@ -1,6 +1,6 @@
 package loga.dev10.hibernate.service;
 
-import loga.dev10.hibernate.properties.Client;
+import loga.dev10.hibernate.entities.Client;
 import loga.dev10.hibernate.utils.HibernateUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.Session;

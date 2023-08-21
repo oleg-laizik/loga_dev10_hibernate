@@ -3,16 +3,17 @@ package loga.dev10.hibernate.utils;
 import org.flywaydb.core.Flyway;
 
 import java.io.FileInputStream;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
 public class MigrationUtil {
 
-    public static void main(String[] args) {
-        try (InputStream propFile = new FileInputStream("db.properties")) {
+    public  void migration() {
+        try (FileReader proper = new FileReader("db.properties")) {
             Properties properties = new Properties();
-            properties.load(propFile);
+            properties.load(proper);
 
             String url = properties.getProperty("url");
             String username = properties.getProperty("username");

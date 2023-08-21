@@ -2,7 +2,7 @@ package loga.dev10.hibernate.service;
 
 import lombok.extern.slf4j.Slf4j;
 import loga.dev10.hibernate.utils.HibernateUtil;
-import loga.dev10.hibernate.properties.Planet;
+import loga.dev10.hibernate.entities.Planet;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -65,7 +65,7 @@ public class PlanetCrudService {
         }
     }
 
-    public List<Planet> getAll() {
+    public List<Planet> getAllPlanet() {
         try (Session session = getSession()) {
             return session.createQuery("from Planet ", Planet.class).list();
         }
